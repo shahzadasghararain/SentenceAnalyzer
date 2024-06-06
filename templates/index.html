@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Predict</h2>
+
+<form action="/predict" method="post">
+  <label for="sentence">Sentence:</label><br>
+  <input type="text" id="sentence" name="sentence" value=""><br>
+  <input type="submit" value="Submit">
+</form>
+
+<h2>Feedback</h2>
+
+<form action="/feedback" method="post">
+  <label for="sentence">Sentence:</label><br>
+  <input type="text" id="feedback-sentence" name="sentence" value=""><br>
+  <input type="hidden" id="predicted_label" name="predicted_label" value="">
+  <input type="hidden" id="assistant_response" name="assistant_response" value="">
+  <label for="correct_prediction">Was the prediction correct?</label><br>
+  <input type="checkbox" id="correct_prediction" name="correct_prediction" value="yes"><br>
+  <label for="correct_assistant">Was the assistant's response correct?</label><br>
+  <input type="checkbox" id="correct_assistant" name="correct_assistant" value="yes"><br>
+  <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
